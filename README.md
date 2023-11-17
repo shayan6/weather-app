@@ -26,7 +26,6 @@ Welcome to the Weather App! This web application allows users to add locations a
     ```bash
     npm install
 
-
 3. **Run the development server:**
     ```bash
     npm run dev

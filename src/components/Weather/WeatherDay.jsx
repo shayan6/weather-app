@@ -5,7 +5,7 @@ import { useTemperatureContext } from '../../context_api/TemperatureContext';
 import React from 'react';
 
 const WeatherDay = ({ day }) => {
-  const { temperatureUnit, toggleTemperatureUnit } = useTemperatureContext();
+  const { temperatureUnit } = useTemperatureContext();
   function getDayFromDate(dateString) {
     const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const date = new Date(dateString);

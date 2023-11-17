@@ -2,8 +2,8 @@ import { Typography, Grid, Card, CardContent } from '@mui/material';
 import React from 'react';
 import { useTemperatureContext } from '../../context_api/TemperatureContext';
 
-const WeatherHour = ({ hour, current }) => {
-  const { temperatureUnit, toggleTemperatureUnit } = useTemperatureContext();
+const WeatherHour = ({ hour }) => {
+  const { temperatureUnit } = useTemperatureContext();
 
   const getTemperatureValue = () => {
     const temperature = temperatureUnit === 'Celsius' ? hour.temp_c: hour.temp_f;

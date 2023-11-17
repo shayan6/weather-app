@@ -12,8 +12,6 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 function Weather() {
-  // State for storing the selected temperature unit (Celsius or Fahrenheit)
-  // const [temperatureUnit, setTemperatureUnit] = useState('Celsius');
   const { temperatureUnit, toggleTemperatureUnit } = useTemperatureContext();
   const { locationId } = useParams(); // Get the location ID from the URL params
   const [weatherData, setWeatherData] = useState(null);
@@ -23,11 +21,6 @@ function Weather() {
     setCurrentHour(newValue);
   };
 
-  // Function to toggle the temperature unit
-  // const toggleTemperatureUnit = (unit) => {
-  //   setTemperatureUnit(unit);
-  // };
-
   useEffect(() => { // Get saved locations from local storage
     const savedLocations = JSON.parse(localStorage.getItem('locations'));
 
@@ -36,9 +29,6 @@ function Weather() {
     const fetchWeatherDetails = async () => {
       try {
         const response = await getWeatherDetails(location);
-        // setWeatherData(response);
-
-        // need to change it 
         getLocationData(location.name)
           .then((data) => setWeatherData({ ...response, current: data.current }))
           .catch((error) => console.error('Error fetching weather data:', error));

@@ -1,10 +1,10 @@
-import { Typography, Grid, Card, CardContent, ListItem, ListItemIcon } from '@mui/material';
+import { Typography, Grid, Card, CardContent } from '@mui/material';
 import React from 'react';
 import { useTemperatureContext } from '../../context_api/TemperatureContext';
 import { Cloud, Air, Opacity, Thermostat } from '@mui/icons-material'; // Import the Cloud icon
 
 const WeatherCurrent = ({ current, location }) => {
-  const { temperatureUnit, toggleTemperatureUnit } = useTemperatureContext();
+  const { temperatureUnit } = useTemperatureContext();
 
   const getTemperatureValue = (feelslike = false) => {
     const temperature = feelslike ? (temperatureUnit === 'Celsius' ? current.feelslike_c : current.feelslike_f) : (temperatureUnit === 'Celsius' ? current.temp_c : current.temp_f);
@@ -16,8 +16,6 @@ const WeatherCurrent = ({ current, location }) => {
   return (
     <Grid container spacing={2}>
       <Grid item xs={12} sm={6}>
-        {console.log("Hassan here current", current)}
-        {console.log("Hassan here location", location)}
         <Card className="weather-card">
           <CardContent>
             <Typography variant="h3">{getTemperatureValue()}</Typography>

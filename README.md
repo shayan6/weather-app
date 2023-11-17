@@ -75,10 +75,6 @@ To run the app successfully, follow these steps:
 1. Obtain an API key by creating an account, verifying your email, and accessing the Weather API.
 2. Handle rate limiting to avoid issues with too many requests in a short period.
 
-## Live Demo
-
-Visit the live demo of the Weather App [here](#insert-live-demo-link).
-
 ## Contact
 
 Thank you for checking out our Weather App! If you have any questions or feedback, feel free to reach out.

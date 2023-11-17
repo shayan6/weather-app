@@ -23,11 +23,11 @@ Welcome to the Weather App! This web application allows users to add locations a
    cd weather-app
 
 2. **Install dependencies:**
-    ```npm install```
+    ```npm install
 
 
 3. **Run the development server:**
-    ```npm run dev```
+    ```npm run dev
 
 ## Features
 

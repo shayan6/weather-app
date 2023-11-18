@@ -19,7 +19,7 @@ Welcome to the Weather App! This web application allows users to add locations a
 1. **Clone the repository:**
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/shayan6/weather-app.git
    cd weather-app
 
 2. **Install dependencies:**

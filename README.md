@@ -78,5 +78,6 @@ To run the app successfully, follow these steps:
 ## Contact
 
 Thank you for checking out our Weather App! If you have any questions or feedback, feel free to reach out.
+- Project Maintainer: [shayanshaikh996@gmail.com](mailto:shayanshaikh996@gmail.com)
 
 Happy weather exploring! ☀️🌧️❄️

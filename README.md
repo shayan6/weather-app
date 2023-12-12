@@ -64,10 +64,6 @@ Welcome to the Weather App! This web application allows users to add locations a
 - **Delete Locations:**
   - Provides the ability to remove a location.
 
-## Deployment
-
-The Weather App is hosted on Netlify for convenient access. Explore the live demo [here](#insert-live-demo-link).
-
 ## Important Note
 
 To run the app successfully, follow these steps:
